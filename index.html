@@ -145,6 +145,9 @@
                 <button onclick="navigateTo('about')"
                     class="nav-link text-[11px] uppercase tracking-widest font-semibold text-gray-400"
                     data-page="about">แบรนด์</button>
+                <button onclick="navigateTo('cert')"
+                    class="nav-link text-[11px] uppercase tracking-widest font-semibold text-gray-400"
+                    data-page="cert">ใบรับรอง</button>
                 <button onclick="navigateTo('contact')"
                     class="nav-link text-[11px] uppercase tracking-widest font-semibold text-gray-400"
                     data-page="contact">ติดต่อ</button>
@@ -166,6 +169,8 @@
                 class="text-4xl font-bold text-left tracking-tighter">PRODUCTS</button>
             <button onclick="navigateTo('about'); toggleMenu()"
                 class="text-4xl font-bold text-left tracking-tighter">ABOUT</button>
+            <button onclick="navigateTo('cert'); toggleMenu()"
+                class="text-4xl font-bold text-left tracking-tighter">CERTIFICATES</button>
             <button onclick="navigateTo('contact'); toggleMenu()"
                 class="text-4xl font-bold text-left tracking-tighter">CONTACT</button>
         </div>
@@ -205,6 +210,92 @@
         <section id="page-products" class="page-section hidden-page pt-40 pb-32 px-6 max-w-6xl mx-auto">
             <div id="full-product-grid" class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20"></div>
         </section>
+        <!-- CERTIFICATION PAGE -->
+        <section id="page-cert" class="page-section hidden-page pt-40 pb-32 px-6 max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-6xl font-bold tracking-tighter mb-6">มาตรฐานที่ <span
+                        class="text-gray-400 italic">พิสูจน์แล้ว</span></h2>
+                <p class="text-lg text-gray-500 font-light max-w-3xl mx-auto">ความไว้วางใจไม่ได้สร้างขึ้นในวันเดียว
+                    OASIS
+                    มุ่งมั่นพัฒนาคุณภาพอย่างต่อเนื่องจนได้รับการรับรองจากหน่วยงานระดับโลกและระดับประเทศ</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="aspect-[1/1.4] bg-[#f5f5f7] p-6 flex items-center justify-center overflow-hidden">
+                        <img src="ใบ1 (5).jpg" class="w-full h-full object-contain shadow-xl" alt="Certificate">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-lg font-bold mb-3 uppercase tracking-tight text-black">Global Quality Standard
+                        </h4>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed italic">"ใบรับรองมาตรฐานการผลิตสากล
+                            ยืนยันถึงกระบวนการที่โปร่งใสและตรวจสอบได้ในทุกขั้นตอน"</p>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="aspect-[1/1.4] bg-[#f5f5f7] p-6 flex items-center justify-center overflow-hidden">
+                        <img src="ใบ1 (4).jpg" class="w-full h-full object-contain shadow-xl" alt="Certificate">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-lg font-bold mb-3 uppercase tracking-tight text-black">Safety Compliance</h4>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed italic">"เราไม่ได้ทำแค่ผลิตภัณฑ์
+                            แต่เราสร้างความอุ่นใจ ผ่านการทดสอบด้านความปลอดภัยอย่างเข้มงวด"</p>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="aspect-[1/1.4] bg-[#f5f5f7] p-6 flex items-center justify-center overflow-hidden">
+                        <img src="ใบ1 (3).jpg" class="w-full h-full object-contain shadow-xl" alt="Certificate">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-lg font-bold mb-3 uppercase tracking-tight text-black">Innovation Excellence
+                        </h4>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed italic">
+                            "รางวัลการันตีผลงานด้านนวัตกรรม ที่ถูกออกแบบมาเพื่อแก้ปัญหาการใช้งานจริงอย่างตรงจุด"</p>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="aspect-[1/1.4] bg-[#f5f5f7] p-6 flex items-center justify-center overflow-hidden">
+                        <img src="ใบ1 (2).jpg" class="w-full h-full object-contain shadow-xl" alt="Certificate">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-lg font-bold mb-3 uppercase tracking-tight text-black">Environmental Pledge</h4>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed italic">
+                            "มุ่งสู่ความยั่งยืนด้วยการรับรองมาตรฐานด้านสิ่งแวดล้อม ลดการใช้พลังงานและเป็นมิตรต่อโลก"</p>
+                    </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card">
+                    <div class="aspect-[1/1.4] bg-[#f5f5f7] p-6 flex items-center justify-center overflow-hidden">
+                        <img src="ใบ1 (1).jpg" class="w-full h-full object-contain shadow-xl" alt="Certificate">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="text-lg font-bold mb-3 uppercase tracking-tight text-black">Industrial Trust</h4>
+                        <p class="text-sm text-gray-500 font-light leading-relaxed italic">
+                            "มาตรฐานอุตสาหกรรมที่คุณไว้วางใจได้เสมอ พร้อมรองรับการใช้งานหนักในทุกโครงการอาคาร"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 bg-black text-white rounded-[40px] p-12 md:p-20 text-center overflow-hidden relative">
+                <div class="absolute top-0 right-0 p-10 opacity-10"><i class="fas fa-certificate text-9xl"></i></div>
+                <h3 class="text-3xl font-bold mb-6 tracking-tight">ความมั่นใจของลูกค้าคือรางวัลที่ใหญ่ที่สุด</h3>
+                <p class="text-gray-400 font-light mb-10 max-w-xl mx-auto leading-relaxed text-lg">
+                    หากคุณต้องการข้อมูลทางเทคนิค ใบรับรองฉบับภาษาอังกฤษ หรือเอกสารประกอบโครงการก่อสร้าง
+                    ทีมวิศวกรของเราพร้อมดูแลคุณโดยตรง</p>
+                <button onclick="navigateTo('contact')"
+                    class="bg-white text-black px-12 py-5 rounded-full font-bold hover:bg-gray-200 transition-all shadow-2xl">ขอข้อมูลเอกสารทางเทคนิค</button>
+            </div>
+        </section>
+
+
 
         <!-- DETAIL PAGE (Full Info Here) -->
         <section id="page-detail" class="page-section hidden-page pt-40 pb-32 px-6 max-w-6xl mx-auto">
@@ -402,7 +493,7 @@
                     </div>
                 `,
                 features: ["HEPA 13 Filtration", "AI Smart Sensor", "Ultra Quiet 20dB"],
-                images: ["ฟอกย1.png", "ฟอกย3.png", "ฟอกย4.jpg", "ฟอก8.jpg", "ฟอกย7.jpg", "ฟอกย8.jpg",]
+                images: ["ฟอกย1.png", "ฟอกย3.png", "ฟอกย4.jpg", "ฟอก8.jpg", "ฟอกย7.jpg", "ฟอกย8.jpg", "ฟอกย10.jpg",]
             },
             {
                 id: 3,
